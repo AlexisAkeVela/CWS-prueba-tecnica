@@ -4,10 +4,10 @@
 
 Para la prueba técnica de CWS, fue solicitado la creación de un servicio web para la gestión de notas empleando cuatro tecnologías: React como interfaz gráfica, Laravel como administrador de los datos, MySQL como medio de almacenamiento de estos y Axios para la comunicación entre la interfaz gráfica y el administrador de datos.
 
-El proyecto debia de permitir la creación, edición y eliminación de notas.
+El proyecto debía de permitir la creación, edición y eliminación de notas.
 Para la creación del proyecto fue empleado un tiempo estimado de 1hr con 30 minutos.
 
-Se emplearon dos marcos de trabajo distintos para la realización de dicho proyecto, estos se encuentra en este mismo repositorio.
+Se emplearon dos marcos de trabajo distintos para la realización de dicho proyecto, estos se encuentran en este mismo repositorio.
 
 **API**
 Es un proyecto de Laravel en la versión 12.3.0. El API es responsable de toda la lógica y gestión de datos (recepción, procesamiento, almacenamiento y servicio), asi mismo está se encarga de realizar la conexión con la base de datos.
@@ -17,7 +17,8 @@ Este es un proyecto de Vite en su versión 6.2.0, configurado con React versión
 
 ## Guía de instalación rápida
 
-**Tecnologías:**
+### Tecnologías
+
 Para poder ejecutar el proyecto es necesario tener instaladas las siguientes tecnologías
 
 - PHP 8.2^
@@ -50,7 +51,7 @@ Para poder ejecutar el proyecto es necesario realizar algunas configuraciones:
 - Configurar las variables de entorno del API
   - Crea un documento **.env** en la carpeta [raíz del proyecto](/API)
   - Copia la información del documento llamado [.env.example](/API/.env.example) y pegalo en **.env**
-  - Ajustar las variables a las requeridas segun tus necesidades
+  - Ajustar las variables a las requeridas según tus necesidades
 - Realizar las migraciones correspondientes, esto se encarga de crear la tabla en MySQL en donde se almacena la información, para ello es necesario ejecutar los siguientes comandos tomando como referencia la carpeta API:
 
 ```bash
@@ -59,7 +60,7 @@ $ php artisan migrate
 
 #### Nota
 
-Por defecto el Front está configurado para funcionar con el **API** ubicado en el puerto **8000**, en caso de que otra configuración es necesario cambiar el puerto en los siguientes archivos:
+Por defecto el Front está configurado para funcionar con el **API** ubicado en el puerto **8000**, en caso de que se tenga otra configuración es necesario cambiar el puerto en los siguientes archivos:
 
 - [Notes.jsx](/Front/src/components/pages/Notes.jsx)
 - [NotesForm.jsx](/Front/src/components/templates/NotesForm.jsx)
@@ -83,4 +84,4 @@ $ cd .\Front\
 $ npm run dev
 ```
 
-Una vez ejecutados ambos comandos, el proyecto ya se encontrara en ejecución por lo que debera de dirigirse a su ruta http://localhost:5173/notes donde **5173** es el puerto por defecto de Vite.
+Una vez ejecutados ambos comandos, el proyecto ya se encontrará en ejecución por lo que deberá de dirigirse a su ruta http://localhost:5173/notes donde **5173** es el puerto por defecto de Vite.
